@@ -2,6 +2,7 @@ django>=2.0.8,<2.1
 django-widget-tweaks
 django-dbbackup
 django-ipware
+django-analytical
 mysqlclient
 celery
 redis

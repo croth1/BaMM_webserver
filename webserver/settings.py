@@ -65,6 +65,7 @@ INSTALLED_APPS = (
     'django.contrib.humanize',
     'dbbackup',
     'widget_tweaks',
+    'analytical',
 )
 
 
@@ -322,3 +323,7 @@ DBBACKUP_STORAGE_OPTIONS = {'location': '/backup'}
 DBBACKUP_CLEANUP_KEEP = get_from_env('N_STORED_BACKUPS', converter=int)
 DBBACKUP_CLEANUP_KEEP_MEDIA = get_from_env('N_STORED_BACKUPS', converter=int)
 DAILY_BACKUP_HOUR_UTC = get_from_env('DAILY_BACKUP_HOUR_UTC', converter=int)
+
+# analytics settings
+PIWIK_DOMAIN_PATH = get_from_env('PIWIK_DOMAIN_PATH')
+PIWIK_SITE_ID = get_from_env('PIWIK_SITE_ID')
